@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+h1
+{
+text-align:center;
+text-decoration:underline;
+color:red;
+font-size:48px;
+font-family:Georgia;
+}
+ul
+{
+text-align:center;
+list-style-type:none;
+padding:0;
+margin:0;
+overflow:hidden;
+background-color:#333;
+}
+li
+{
+text-align:center;
+float:left;
+padding:16px;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	background-color:#333;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	}
+input[type=text], input[type=password]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button 
+{
+    background-color: #333;
+	text-align:right;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelbtn 
+{
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn,.signupbtn {float:left;width:50%}
+.container 
+{
+    padding: 16px;
+}
+.modal 
+{
+    display: none;
+    position: fixed;    
+	z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content 
+{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close
+ {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}	
+img
+{
+width:1332px;
+height:600px;
+}
+p
+{
+font-family:Verdana, Arial;
+font-size:24px;
+text-align:left;
+color:brown;
+}
+marquee
+{
+color:#FF0000;
+background-image:url(wild-flowers-flowers-plant-macro-40797.jpeg);
+width:100%;
+font-family:Times New Roman;
+text-align:left;
+text-transform:capitalize;
+text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<h1> The Flower Junction </h1>
+<ul>
+<li><a href="Home.html">Home</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a href="Flowers.html">Flower</a>
+      <a href="Occasions For Gifting Flower.html">Floral Holidays</a>
+      <a href="Speciality Services.html">Speciality Services</a>
+	  <a href="Our Shop.html">Our Shop</a>
+    </div></li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Special Ocassion</a>
+    <div class="dropdown-content">
+      <a href="Administrative.html">Administrative</a>
+      <a href="Newborn Arrangements.html">Baby Boy/Girl</a>
+      <a href="Birthday.html">Birthday</a>
+	  <a href="Corsages and Boutonnieres.html">Corsage & Boutonnieres</a>
+	  <a href="Prom Decor.html">Prom Decor</a>
+	  <a href="Patriotic.html">Patriotic</a>
+	  <a href="Sympathy.html">Sympathy</a>
+      <a href="Wedding Arrangements.html">Weddings</a>  
+    </div></li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Holiday Seasonal</a>
+    <div class="dropdown-content">
+      <a href="Autumn-Fall.html">Autumn/Fall</a>
+      <a href="Christmas-Arrangements.html">Christmas</a>
+      <a href="December.html">December Holidays</a>
+	  <a href="Spring.html">Spring</a>
+	  <a href="Valentines Day.html">Valentine's Day</a>
+ </div></li>
+<li><a href="Location.html">Location</a></li>
+<li><button onClick="document.getElementById('id01'). style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onClick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<li>
+</ul>
+<img src="red-love-romantic-flowers.jpg"/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+<p>
+To help assure on-time delivery during the busy holiday season, please place your order at least 2 to 3 days prior to the following major holidays: Thanksgiving Day, Christmas Day, New Year's, Valentine's Day, Easter, Administrative Professionals Week, Mother's Day, Memorial Day, Father's Day, Independence Day and Labor Day.
+<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Offering a military discount of 15% off<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cash and carry and local deliveries.<br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><font color="#0033FF" size="+3"><b>Thank you for your service</b></font></u><br/><br/>
+</p>
+<marquee behavior="alternate" direction="up" width="80%">
+<marquee behavior="alternate" direction="right">
+We Would Love to Have You Visit Soon!<br/><br/>
+
+Hours
+Mon-Fri: 9am - 5pm<br/>
+Sat: 9am - 1pm<br/>
+Sun: Close <br/><br/>
+Telephone:+91 9054785524, +91 8845241562<br/><br/>
+Address:142 Main Street, Rajendra Nagar, New Delhi, India 08048&nbsp;&nbsp;&nbsp;&nbsp;
+</marquee>
+</marquee>
+</body>
+</html>
